@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ammo
   - Enemy
+  - Chain
   layers:
   - Default
   - TransparentFX

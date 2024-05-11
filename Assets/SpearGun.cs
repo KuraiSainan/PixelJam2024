@@ -6,7 +6,7 @@ public class SpearGun : MonoBehaviour
 {
     Player player;
     public int damage;
-    [SerializeField] GameObject ammo;
+    [SerializeField] GameObject ammo,chain,chainOff;
     [SerializeField] Transform gunTips;
     ObjectPool pool;
     // Start is called before the first frame update
@@ -15,6 +15,8 @@ public class SpearGun : MonoBehaviour
         player = GetComponent<Player>();
         pool = ObjectPool.instance;
        pool.CreatePool(ammo, 10);
+        pool.CreatePool(chain, 25);
+        pool.CreatePool(chainOff, 25);
     }
 
     // Update is called once per frame
